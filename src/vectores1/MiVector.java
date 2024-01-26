@@ -18,8 +18,21 @@ public class MiVector {
 	
 	@Override
 	public String toString() {
-		return "MiVector " + Arrays.toString(datos) + "\ncuantosHay=" + cuantosHay;
+		
+		String devolver = "MiVector [";
+		
+		for(int i=0;i<cuantosHay-1;i++) {
+			devolver += datos[i]+", ";
+		}
+		devolver += datos[cuantosHay-1]+"]";
+				
+		devolver+="\ncuantosHay=" + cuantosHay;
+		
+		return devolver;
 	}
+	
+	
+	
 	
 	
 	
