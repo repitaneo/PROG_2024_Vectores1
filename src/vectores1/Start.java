@@ -3,7 +3,10 @@ package vectores1;
 public class Start {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		MiVector vector = new MiVector(10);
+		System.out.println(vector);
+		
 
 	}
 
