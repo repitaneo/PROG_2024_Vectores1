@@ -59,8 +59,20 @@ public class MiVector {
 		
 		int posicion = buscar(numero);
 		
-		
-		
+		System.out.println("encontrado el "+numero+" en "+posicion);
+		if (posicion!=-1) {
+			
+			// miro si muevo y tengo numeros a la derecha
+			if(posicion<cuantosHay-1) {
+				
+				for(int i=0;i<cuantosHay-1-posicion;i++) {
+					
+					datos[posicion+i] = datos[posicion+1+i];
+				}
+			}
+			cuantosHay--;
+		}
+		return posicion;
 	}
 
 
